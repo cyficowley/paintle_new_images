@@ -28,11 +28,11 @@ def update_res(url, new_res):
     return url.replace("!200,200", f"!{new_res},{new_res}")
 
     
-with open('data/objects.csv', newline='') as csvfile:
+with open('opendata/data/objects.csv', newline='') as csvfile:
     csv_reader = csv.reader(csvfile)
     data = list(csv_reader)
 
-with open('data/published_images.csv') as csvfile:
+with open('opendata/data/published_images.csv') as csvfile:
     csv_reader = csv.reader(csvfile)
     images = list(csv_reader)
 
