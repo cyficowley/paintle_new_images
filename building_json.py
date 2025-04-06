@@ -27,7 +27,9 @@ for i, image in enumerate(image_data):
     for key in keys_to_include:
         idx = key_to_idx[key]
         image_datum[key] = image[idx]
-    
+        
+    image_datum["filename"] =  f"image_{i:04d}.webp"
+
     final_list.append(image_datum)
 
 
