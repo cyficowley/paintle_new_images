@@ -4,7 +4,6 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import json
 
 # Your list of image URLs
-image_urls = [...]  # replace with your list
 output_dir = "downloaded_images"
 os.makedirs(output_dir, exist_ok=True)
 
@@ -13,7 +12,7 @@ os.makedirs(output_dir, exist_ok=True)
 with open('urls.json') as json_data:
     urls = json.load(json_data)
 
-print(len(urls))
+image_urls = urls
 
 
 # Function to download a single image
